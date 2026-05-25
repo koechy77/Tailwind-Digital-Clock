@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Class</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="md:text-6xl text-center">Fundamentals Of Tailwind CSS</h1>
+    <h2 class="text-sm text-emerald-400 text-left bg-gray-300">small</h2>
+    <h3 class="text-base text-red-500 text-center bg-black/50 p-2">medium</h3>
+    <h4 class="text-lg text-blue-400 text-right bg-amber-400 p-4">large</h4>
+
+    <section class="bg-[url(./media/WIN_20250709_16_40_35_Pro.jpg)] bg-cover bg-center h-64 w-100% text-center p-12 text-7xl font-extrabold">
+        <h2>Background Image</h2>
+        <p>Sample</p>
+    </section>
+
+    <section class="bg-gradient-to-r from-green-600 from-33.33% via-white via-33.33% via-66.66% to-green-600 to-66.66% h-64 w-100% text-6xl font-extrabold text-center p-12 ">
+        <h2>Gradient Background</h2>
+        <p>Sample</p>
+    </section>
+
+    <aside class="bg-radial from-green-600 from-20%  to-red-600 to-20% h-64 w-100% text-6xl font-bold text-bottom p-12 ">
+        <p>Radical Gradient Background</p>
+    </aside>
+    <section class="grid grid-cols-4 grid-rows-4 gap-1 m-1.5 text-6xl font-bold">
+        <div class="bg-amber-300 h-auto col-span-2"> Grid 1</div>
+        <div class="bg-orange-800 h-auto row-span-2"> Grid 2</div>
+        <div class="bg-blue-950 h-auto col-span-1"> Grid 3</div>
+        <div class="bg-green-600 h-auto row-span-3"> Grid 4</div>
+        <div class="bg-gray-400 h-auto col-span-1"> Grid 5</div>
+        <div class="bg-pink-900 h-auto col-span-1"> Grid 6</div>
+        <div class="bg-yellow-400 h-auto col-span-3"> Grid 7</div>
+        <div class="bg-purple-500 h-auto col-span-3"> Grid 8</div>
+    </section>
+    <aside class="flex flex-col h-64  text-6xl font-bold justify-between items-center gap-2">
+        <div>flex 1</div>
+        <div>flex 2</div>
+        <div>flex 3</div>
+        <div>flex 4</div>
+    </aside>
+    <section class="bg-conic from-white to-33.33% via-black from-33.33%% to-66.66% to-gray-400 from-66.66% h-100 text-6xl font-bold mt-7">
+        <div> Flex 1</div>
+        <div> Flex 2</div>
+        <div> Flex 3</div>
+    </section>
+</body>
+
+</html>

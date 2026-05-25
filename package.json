@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  },
+  "name": "my-first-website",
+  "version": "1.0.0",
+  "description": "Tailwind CSS Basic Class",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Kingsley": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koechy77/my-first-website.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwind CSS",
+    "Frontend",
+    "JS"
+  ],
+  "author": "Kingsley-Onyem",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Koechy77/my-first-website/issues"
+  },
+  "homepage": "https://github.com/Koechy77/my-first-website#readme"
+}

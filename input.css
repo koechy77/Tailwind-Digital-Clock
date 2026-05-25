@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer components {
+    .clock {
+        @apply bg-gradient-to-r from-white from-50% to-50% to-cyan-100 h-screen flex flex-col items-center justify-center text-xl
+    }
+
+    .clock #time {
+        @apply flex gap-10 mt-17
+    }
+
+    .clock div {
+        @apply flex flex-col bg-gradient-to-b from-gray-600 from-70% to-70% to-gray-900 rounded-2xl items-center text-amber-50
+    }
+
+    #date {
+        @apply flex mt-20 justify-between items-center w-200  rounded-xl bg-gradient-to-r from-cyan-100 to-cyan-200 box-border pb-10
+    }
+}
+
+/* @layer components{
+     .CC{
+        @apply bg-gradient-to-b from-blue-400 to-purple-600 h-screen flex flex-col items-center pt-40
+    }
+    .p{
+        @apply bg-white pr-200 pb-50 pt-2 pl-2 border rounded-2xl
+    }
+    .grid{
+        @apply grid grid-cols-3 grid-rows-1 gap-5 
+    }
+    .grid div:first-of-type{
+        @apply flex flex-row
+    }
+    .grid1{
+        @apply bg-amber-700 p-2.5 border rounded-2xl
+    }
+    .grid2{
+        @apply bg-yellow-400 p-2.5 border rounded-2xl
+    }
+    .grid3{
+        @apply bg-green-900 p-2.5 rounded-2xl
+    }
+    .cp{
+        @apply bg-purple-900 p-2.5 rounded-2xl
+    }
+
+} */
+@layer base {
+    h1 {
+        @apply text-9xl gap-20 font-extrabold font-serif
+    }
+
+    span:first-of-type {
+        @apply mt-10 font-extrabold text-7xl
+    }
+
+    span:nth-of-type(2) {
+        @apply mt-11 font-extrabold
+    }
+
+    div {
+        @apply w-50 h-50 text-2xl shadow-xl shadow-black
+    }
+    .date-label{
+        @apply pl-10
+    }
+    .date-value{
+        @apply pr-10 font-extrabold text-5xl
+    }
+
+}

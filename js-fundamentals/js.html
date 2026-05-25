@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Guess Game</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .game-box {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: gold;
+      font-weight: bold;
+    }
+
+    #message {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game-box">
+    <h2>Guess The Number</h2>
+    <p>Guess a number between 1 and 20</p>
+
+    <input type="number" id="guessInput" min="1" max="20">
+    <br>
+
+    <button onclick="checkGuess()">Submit</button>
+
+    <p id="trials">Trials left: 5</p>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    // Random number between 1 and 20
+    let randomNumber = Math.floor(Math.random() * 20) + 1;
+
+    // Total trials
+    let trialsLeft = 5;
+
+    function checkGuess() {
+      const userGuess = Number(document.getElementById("guessInput").value);
+      const message = document.getElementById("message");
+      const trials = document.getElementById("trials");
+
+      // Prevent playing after game ends
+      if (trialsLeft <= 0) {
+        return;
+      }
+
+      // Correct guess
+      if (userGuess === randomNumber) {
+        message.textContent = "🎉 Correct! You guessed the number!";
+        trials.textContent = "Game Over";
+        trialsLeft = 0;
+      } else {
+        trialsLeft--;
+
+        // Wrong guess
+        if (trialsLeft > 0) {
+          if (userGuess > randomNumber) {
+            message.textContent = "Too high!";
+          } else {
+            message.textContent = "Too low!";
+          }
+
+          trials.textContent = `Trials left: ${trialsLeft}`;
+        } else {
+          // After 5th trial
+          message.textContent =
+            `❌ Game Over! The random number was ${randomNumber}`;
+          trials.textContent = "No trials left";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+</head>
+
+<body>
+    <script>
+        const randomNumber = parseInt(Math.random() * 20)
+
+        for (let trial = 1; trial <= 6; trial++) {
+            let guessNumber = trial <= 5 ? prompt(`Guess Round ${trial}\n You have ${5 - trial} more round\n Guess a number from 1 to 20:`) / 1 : null
+
+            if (trial <= 5) {
+                if (guessNumber !== randomNumber) {
+                    alert(`Your guess is ${guessNumber > randomNumber ? "Greater than" : "Less than"} the random number`)
+                }
+
+            } else {
+                alert(`You got it \n The random number is ${randomNumber}`)
+                break
+            } else {
+                alert(`Game over \n The random number is ${randomNumber}`)
+            }
+
+        }
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP FORM</title>
+</head>
+<body>
+    <script>
+        
+    </script>
+</body>
+</html>

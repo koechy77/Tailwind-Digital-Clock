@@ -1,3 +1,235 @@
-article {
-    background-image: linear-gradient(to bottom, );
+body {
+    display: flex;
+    gap: 20px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    zoom: 0.9;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: calc(25% + 10px);
+    width: 2px;
+    background: black;
+}
+
+header {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+
+
+
+}
+
+.name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main section:first-of-type {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+
+}
+
+main section:nth-of-type(2) {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+
+}
+
+main section:nth-of-type(3) {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+main section:nth-of-type(4) {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+}
+
+aside * {
+    max-width: 100%;
+}
+
+aside section {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2rem;
+}
+h2, h3 {
+    font-size: 1.2rem;
+
+}
+p {
+    font-size: 1rem;
+
+}
+li, small{
+    font-size: 0.9rem;
+}
+aside {
+    font-size: 0.9rem;
+}
+aside h3 {
+    font-size: 1.2em;
+}
+aside li {
+    font-size: 0.9em
+}
+section h1,
+section h2,
+section h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.container section:nth-child(1) {
+    order: 1;
+}
+.container section:nth-child(2) {
+    order: 4;
+}
+.container section:nth-child(3) {
+    order: 3;
+}
+.container section:nth-child(4) {
+    order: 2;
+}
+.education {
+    order: 5;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.education-item {
+    margin-bottom: 1rem;
+}
+.eduucation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.education-header h3 {
+    margin: 0;
+    text-decoration: none;
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+.date {
+    font-size: 0.9rem;
+    margin-left: auto;
+    white-space: nowrap;
+}
+main section:nth-of-type(6) {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    order: 6;
+}
+@media print {
+    section {
+        page-break-inside: avoid;
+        margin-bottom: 8px;
+    }
+    body {
+        zoom: 0.7;
+    }
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    aside p, aside li {
+        word-break: keep-all;
+    }
+    .container::before{
+        left: 26%;
+    }
+}
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: black;
+    color: gold;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.download-btn:hover {
+    transform: translateY(-2px);
+} 
